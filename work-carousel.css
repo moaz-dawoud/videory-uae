@@ -1,0 +1,33 @@
+/* Three films on desktop; keep the original players and their native controls. */
+.work-carousel { --visible-films: 3; --film-gap: 24px; max-width: 1100px; margin-inline: auto; }
+.work-carousel-viewport { overflow: hidden; overflow: clip; min-width: 0; padding-bottom: 8px; }
+.work-carousel .inline-gallery {
+  position: relative; display: flex; gap: var(--film-gap); max-width: none; margin: 0; align-items: flex-start;
+}
+.work-carousel .work-item {
+  flex: 0 0 calc((100% - (var(--visible-films) - 1) * var(--film-gap)) / var(--visible-films));
+  min-width: 0;
+}
+.work-carousel .portfolio-video { max-height: none; }
+.work-carousel .portfolio-video:focus-visible { outline-offset: -4px; }
+.work-carousel-controls { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin: 0 0 18px; }
+.work-carousel-counter { margin-right: auto; color: #526b7b; font-size: 14px; font-variant-numeric: tabular-nums; letter-spacing: 1px; }
+.work-carousel-button {
+  display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; padding: 0;
+  border: 1px solid #a8bfcd; border-radius: 50%; color: #0061a5; background: transparent;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.work-carousel-button:hover, .work-carousel-button:focus-visible { background: #0061a5; color: #fff; border-color: #0061a5; }
+.work-carousel-toggle { margin-right: 7px; }
+.work-carousel-toggle .carousel-play, .work-carousel-toggle[data-paused="true"] .carousel-pause { display: none; }
+.work-carousel-toggle[data-paused="true"] .carousel-play { display: block; }
+.carousel-announcement { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 900px) { .work-carousel { --visible-films: 2; } }
+@media (max-width: 600px) {
+  .work-carousel { --visible-films: 1; --film-gap: 18px; max-width: 420px; }
+  .work-carousel-controls { margin-bottom: 15px; gap: 10px; }
+}
+.work-carousel .work-item > img { display: block; width: 100%; height: auto; border-radius: 9px; }
+.work-carousel .work-item[aria-hidden="true"] { pointer-events: none; }
+/* Reordering original slides must not become a browser scroll anchor. */
+.work-carousel { overflow-anchor: none; }

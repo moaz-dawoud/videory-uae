@@ -1,0 +1,63 @@
+/* Film-led editorial direction. DM Sans is self-hosted under the SIL OFL. */
+@font-face { font-family: 'DM Sans'; src: url('./assets/fonts/dm-sans.ttf') format('truetype'); font-style: normal; font-weight: 100 1000; font-display: swap; }
+body { font-family: 'DM Sans', Arial, sans-serif; }
+em { font-family: inherit; font-style: normal; font-weight: inherit; }
+::selection { background: #00cef1; color: #07141d; }
+.hero-content { max-width: 1180px; }
+.hero h1 { font-weight: 500; font-size: clamp(64px, 8.2vw, 132px); letter-spacing: -.045em; line-height: .99; }
+.hero h1 em { font-size: 1em; letter-spacing: inherit; }
+.hero h1 .title-mask:last-child { margin-left: 5.5vw; }
+.hero-copy { margin-left: 5.5vw; font-size: 17px; }
+.hero .button { margin-left: 5.5vw; padding: 17px 23px; font-weight: 500; }
+.hero .button::after { content: '↗'; font-size: 23px; line-height: 1; transition: transform .3s var(--ease-out); }
+.hero .button:hover::after { transform: translate(3px, -3px); }
+.compact-approach { padding-top: 55px; padding-bottom: 55px; }
+.compact-approach h2 { font-weight: 400; font-size: clamp(30px, 3.5vw, 52px); }
+.our-work { background: #10191f; color: #f0f3f5; padding-top: 110px; padding-bottom: 90px; }
+.work-heading { text-align: left; margin: 0 0 46px; }
+
+.work-heading .section-index, .section-index { color: #a4bac9; font-size: 11px; letter-spacing: .13em; }
+.work-tabs { justify-content: flex-start; flex-wrap: wrap; width: 100%; background: transparent; border: 0; border-bottom: 1px solid #35424b; border-radius: 0; padding: 0; gap: 12px 30px; margin: 0 0 32px; }
+.work-tabs button { position: relative; align-items: flex-start; justify-content: flex-start; min-height: 63px; padding: 8px 0 16px; font-size: 15px; border-radius: 0; color: #b8cbd7; letter-spacing: 0; }
+.work-tabs button::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: #00cef1; transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease-out); }
+.work-tabs button:hover, .work-tabs button[aria-selected="true"] { background: transparent; color: #fff; }
+.work-tabs button[aria-selected="true"]::after { transform: scaleX(1); }
+.tab-status { color: #a4bac9; }
+.work-item figcaption { color: #c1d3de; font-size: 15px; }
+.work-footnote { border-color: #35424b; }
+.work-footnote a { color: #bceeff; }
+.empty-gallery { background: #14242e; color: #c1d3de; border-color: #35424b; }
+.our-work .work-carousel-button { color: #e9f5fb; background: transparent; border-color: #617988; }
+.our-work .work-carousel-button:hover { color: #07141d; background: #bceeff; }
+.our-work .work-carousel-counter { color: #b8cbd7; }
+
+.contact { border-top: 1px solid #35424b; padding-top: 115px; padding-bottom: 110px; grid-template-columns: 1.3fr 1fr; }
+.contact h2 { font-size: clamp(70px, 8.2vw, 128px); font-weight: 400; letter-spacing: -.045em; margin-top: 0; }
+.contact h2 em { font-size: 1em; letter-spacing: inherit; }
+.heading-word-mask { display: inline-block; overflow: hidden; overflow: clip; vertical-align: bottom; padding-bottom: .12em; margin-bottom: -.12em; }
+.heading-word { display: inline-block; }
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(36px, 8.9vw, 67px); letter-spacing: -.045em; line-height: 1.04; }
+  .hero h1 .title-mask:last-child { margin-left: 0; }
+  .hero-copy, .hero .button { margin-left: 0; }
+  .hero-copy { font-size: 14px; }
+  .compact-approach { padding-top: 35px; padding-bottom: 35px; }
+  .our-work { padding-top: 65px; padding-bottom: 55px; }
+
+  .work-heading { margin-bottom: 30px; }
+  .work-tabs { gap: 8px 22px; }
+  .work-tabs button { font-size: 14px; min-height: 61px; }
+
+  .contact { grid-template-columns: 1fr; padding-top: 65px; padding-bottom: 65px; gap: 28px; }
+  .contact h2 { font-size: clamp(56px, 12vw, 86px); }
+}
+
+/* Anchor destinations stay exact while media and scroll animations initialize. */
+html { scroll-behavior: auto; }
+
+.work-heading h2 { font-size: clamp(62px, 8vw, 116px); font-weight: 400; line-height: 1.02; letter-spacing: -.045em; }
+.work-heading h2 em { color: #9dcee0; letter-spacing: inherit; }
+@media(max-width:760px) { .work-heading h2 { font-size:clamp(48px,10vw,74px); } }
+
+@media(max-width:380px) { .hero-copy { font-size:13px; }.work-tabs { column-gap:19px; }.work-tabs button { font-size:13px; } }

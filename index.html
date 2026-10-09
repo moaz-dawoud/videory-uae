@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12181d">
+  <meta name="description" content="Videory is a creative agency in Abu Dhabi, UAE. Production, content and digital marketing, alongside branding, design and web development.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:title" content="Videory | Creative Agency in Abu Dhabi, UAE">
+  <meta property="og:description" content="Film, photography, digital marketing, branding and web development. Meet Videory, a creative agency in Abu Dhabi, UAE.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Videory">
+  <meta property="og:locale" content="en_AE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Videory | Creative Agency in Abu Dhabi, UAE">
+  <meta name="twitter:description" content="Film, photography, digital marketing, branding and web development in Abu Dhabi, UAE.">
+  <title>Videory | Creative Agency in Abu Dhabi, UAE</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="preload" as="image" href="./assets/hero/poster-desktop-hd.webp" media="(min-width: 761px)">
+  <link rel="preload" as="image" href="./assets/hero/poster-mobile-hd.webp" media="(max-width: 760px)">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./motion.css">
+  <link rel="stylesheet" href="./services.css">
+  <link rel="stylesheet" href="./hero.css">
+  <link rel="stylesheet" href="./work-carousel.css">
+  <link rel="stylesheet" href="./editorial.css">
+  <link rel="preload" href="./assets/fonts/dm-sans.ttf" as="font" type="font/ttf" crossorigin>
+  <script src="./app.js" defer></script>
+  <script src="./work-carousel.js" defer></script>
+  <script src="./hero.js" defer></script>
+  <script src="./logo.js" defer></script>
+  <script src="./vendor/gsap.min.js" defer></script>
+  <script src="./vendor/ScrollTrigger.min.js" defer></script>
+  <script src="./motion.js" defer></script>
+  <script src="./services.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Videory",
+  "description": "Creative agency in Abu Dhabi, UAE offering media production, digital marketing, branding and design, and web development.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United Arab Emirates"
+  }
+}
+  </script>
+  <noscript><link rel="stylesheet" href="./no-script.css"></noscript>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <a id="brand-signature" class="wordmark brand-signature" href="#home" aria-label="Videory home"><span class="brand-mark" aria-hidden="true"><img class="brand-icon" src="./assets/brand-icon.png" width="40" height="40" alt=""></span><span class="brand-word-window" aria-hidden="true"><span class="brand-word">videory<span class="logo-dot">.</span></span></span></a>
+    <nav aria-label="Main navigation"><a href="#work">Our work</a><a href="#services">Services</a><a class="nav-cta" href="#contact">Let’s create</a></nav>
+  </header>
+  <main id="main">
+    <section id="home" class="intro" aria-labelledby="hero-title">
+      <div class="hero">
+        <div class="hero-visual" aria-hidden="true">
+          <picture class="hero-poster">
+            <source media="(max-width: 760px)" srcset="./assets/hero/poster-mobile-hd.webp" width="1080" height="1920">
+            <img src="./assets/hero/poster-desktop-hd.webp" alt="" width="1920" height="1080" fetchpriority="high">
+          </picture>
+          <video id="hero-reel" class="hero-reel" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true" disablepictureinpicture disableremoteplayback data-desktop-src="./assets/hero/reel-desktop-hd.mp4" data-mobile-src="./assets/hero/reel-mobile-hd.mp4"></video>
+        </div>
+        <div class="hero-shade"></div>
+        <div class="hero-top"><span class="eyebrow">INDEPENDENT CREATIVE AGENCY</span><span class="location">ABU DHABI · UAE</span></div>
+        <div class="hero-content">
+          <h1 id="hero-title"><span class="title-mask"><span class="title-line">Creative agency.</span></span><span class="title-mask"><em class="title-line">Ideas in motion.</em></span></h1>
+          <p class="hero-copy">Production. Content. Digital Marketing.</p>
+          <a class="button button-orange" href="#work">Explore our work</a>
+        </div>
+        <div class="hero-bottom">
+          <span class="reel-caption">EVENTS · AUTOMOTIVE · F&amp;B</span>
+          <div class="hero-bottom-actions">
+            <button id="hero-motion-toggle" class="reel-toggle" type="button" aria-controls="hero-reel brand-signature" data-playing="false" hidden><svg class="reel-pause-icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 2v8M9 2v8" fill="none" stroke="currentColor" stroke-width="2"></path></svg><svg class="reel-play-icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 1 8 5-8 5Z" fill="currentColor"></path></svg><span>Play motion</span></button>
+            <a class="scroll-link" href="#work">EXPLORE</a>
+          </div>
+        </div>
+        <div class="reel-progress" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="approach compact-approach" id="approach"><h2>From idea. To impact.</h2><div class="credentials"><span>Abu Dhabi &amp; Dubai</span><span>Arabic &amp; English</span></div></div>
+    </section>
+    <section id="work" class="our-work" aria-labelledby="work-title">
+      <div class="work-heading"><span class="section-index" aria-hidden="true">SELECTED WORK</span><h2 id="work-title"><span class="heading-word-mask"><span class="heading-word">Our</span></span> <em class="heading-word-mask"><span class="heading-word">work.</span></em></h2></div>
+      <div class="work-tabs" role="tablist" aria-label="Work categories"><button type="button" role="tab" id="tab-events" aria-controls="panel-events" aria-selected="false" tabindex="-1" data-category="events">Events</button><button type="button" role="tab" id="tab-automotive" aria-controls="panel-automotive" aria-selected="true" tabindex="0" data-category="automotive">Automotive</button><button type="button" role="tab" id="tab-photography" aria-controls="panel-photography" aria-selected="false" tabindex="-1" data-category="photography">Photography<span class="tab-status">Coming soon</span></button><button type="button" role="tab" id="tab-ai-creative" aria-controls="panel-ai-creative" aria-selected="false" tabindex="-1" data-category="ai-creative">AI Creative<span class="tab-status">Coming soon</span></button><button type="button" role="tab" id="tab-food-beverage" aria-controls="panel-food-beverage" aria-selected="false" tabindex="-1" data-category="food-beverage">F&amp;B</button><button type="button" role="tab" id="tab-content-creation" aria-controls="panel-content-creation" aria-selected="false" tabindex="-1" data-category="content-creation">Content Creation<span class="tab-status">Coming soon</span></button></div>
+<div class="work-panel" id="panel-events" role="tabpanel" aria-labelledby="tab-events" tabindex="0" hidden><div class="work-grid inline-gallery landscape-gallery"><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/huawei.jpg" width="1920" height="1080" aria-label="Huawei"><source src="./assets/work/huawei.mp4" type="video/mp4"><a href="./assets/work/huawei.mp4">Watch Huawei</a></video><figcaption>Huawei</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/olympics.jpg" width="1920" height="1080" aria-label="Olympics"><source src="./assets/work/olympics.mp4" type="video/mp4"><a href="./assets/work/olympics.mp4">Watch Olympics</a></video><figcaption>Olympics</figcaption></figure></div></div>
+<div class="work-panel" id="panel-automotive" role="tabpanel" aria-labelledby="tab-automotive" tabindex="0"><div class="work-grid inline-gallery"><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/porsche-911.jpg" width="1080" height="1920" aria-label="Porsche 911"><source src="./assets/work/porsche-911.mp4" type="video/mp4"><a href="./assets/work/porsche-911.mp4">Watch Porsche 911</a></video><figcaption>Porsche 911</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/tesla-cybertruck.jpg" width="1080" height="1920" aria-label="Tesla Cybertruck"><source src="./assets/work/tesla-cybertruck.mp4" type="video/mp4"><a href="./assets/work/tesla-cybertruck.mp4">Watch Tesla Cybertruck</a></video><figcaption>Tesla Cybertruck</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/rolls-royce-cullinan.jpg" width="1080" height="1920" aria-label="Rolls-Royce Cullinan"><source src="./assets/work/rolls-royce-cullinan.mp4" type="video/mp4"><a href="./assets/work/rolls-royce-cullinan.mp4">Watch Rolls-Royce Cullinan</a></video><figcaption>Rolls-Royce Cullinan</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/bentley.jpg" width="1080" height="1920" aria-label="Bentley"><source src="./assets/work/bentley.mp4" type="video/mp4"><a href="./assets/work/bentley.mp4">Watch Bentley</a></video><figcaption>Bentley</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/g-class.jpg" width="1080" height="1920" aria-label="Mercedes-Benz G-Class"><source src="./assets/work/g-class.mp4" type="video/mp4"><a href="./assets/work/g-class.mp4">Watch Mercedes-Benz G-Class</a></video><figcaption>Mercedes-Benz G-Class</figcaption></figure></div></div>
+<div class="work-panel" id="panel-photography" role="tabpanel" aria-labelledby="tab-photography" tabindex="0" hidden><p class="empty-gallery">Coming soon.</p></div>
+<div class="work-panel" id="panel-ai-creative" role="tabpanel" aria-labelledby="tab-ai-creative" tabindex="0" hidden><p class="empty-gallery">Coming soon.</p></div>
+<div class="work-panel" id="panel-food-beverage" role="tabpanel" aria-labelledby="tab-food-beverage" tabindex="0" hidden><div class="work-grid inline-gallery"><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/chocolate-fondant.jpg" width="1080" height="1920" aria-label="Chocolate Fondant"><source src="./assets/work/chocolate-fondant.mp4" type="video/mp4"><a href="./assets/work/chocolate-fondant.mp4">Watch Chocolate Fondant</a></video><figcaption>Chocolate Fondant</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/matcha.jpg" width="1080" height="1920" aria-label="Blue &amp; Green Matcha"><source src="./assets/work/matcha.mp4" type="video/mp4"><a href="./assets/work/matcha.mp4">Watch Blue &amp; Green Matcha</a></video><figcaption>Blue &amp; Green Matcha</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/v60.jpg" width="1080" height="1920" aria-label="V60"><source src="./assets/work/v60.mp4" type="video/mp4"><a href="./assets/work/v60.mp4">Watch V60</a></video><figcaption>V60</figcaption></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/food-film-1.jpg" width="1080" height="1920" aria-label="F&amp;B Film 1"><source src="./assets/work/food-film-1.mp4" type="video/mp4"><a href="./assets/work/food-film-1.mp4">Watch F&amp;B Film 1</a></video></figure><figure class="work-item"><video class="portfolio-video" controls playsinline preload="none" poster="./assets/work/food-film-2.jpg" width="1080" height="1920" aria-label="F&amp;B Film 2"><source src="./assets/work/food-film-2.mp4" type="video/mp4"><a href="./assets/work/food-film-2.mp4">Watch F&amp;B Film 2</a></video></figure></div></div>
+<div class="work-panel" id="panel-content-creation" role="tabpanel" aria-labelledby="tab-content-creation" tabindex="0" hidden><p class="empty-gallery">Coming soon.</p></div>
+      <noscript><p class="work-noscript">All work categories are shown. Enable JavaScript to use category filters and animations.</p></noscript>
+    </section>
+    <section class="services-showcase" id="services" aria-labelledby="services-title">
+      <div class="services-intro">
+        <h2 id="services-title"><span class="services-title-line">Our</span><span class="services-title-line">services.</span></h2>
+        <svg class="services-direction" viewBox="0 0 100 100" aria-hidden="true"><path d="M87 13 13 87M13 13v74h74" fill="none" stroke="currentColor" stroke-width="5"/></svg>
+      </div>
+      <div class="service-stack">
+        <div class="service-marker" aria-hidden="true"></div>
+        <article class="service-step" aria-labelledby="service-title-media">
+          <div class="service-panel service-media">
+            <div class="service-copy">
+              <h3 id="service-title-media">Media<br>Production</h3>
+              <ul class="service-tags" aria-label="Media Production focus"><li>Video</li><li>Photography</li></ul>
+              <p>Events. Automotive. F&B. Stories told through film and photography.</p>
+              <a class="service-link" href="#work">Explore our work<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            </div>
+            <div class="service-art">
+              <div class="service-visual media-composition" aria-hidden="true">
+            <img class="media-frame media-back" src="./assets/work/huawei.jpg" width="1920" height="1080" alt="" loading="lazy" decoding="async">
+            <img class="media-frame media-middle" src="./assets/work/chocolate-fondant.jpg" width="1080" height="1920" alt="" loading="lazy" decoding="async">
+            <img class="media-frame media-front" src="./assets/work/porsche-911.jpg" width="1080" height="1920" alt="" loading="lazy" decoding="async">
+          </div>
+
+            </div>
+          </div>
+        </article>
+        <div class="service-marker" aria-hidden="true"></div>
+        <article class="service-step" aria-labelledby="service-title-marketing">
+          <div class="service-panel service-marketing">
+            <div class="service-copy">
+              <h3 id="service-title-marketing">Digital<br>Marketing</h3>
+              <ul class="service-tags" aria-label="Digital Marketing focus"><li>Content</li><li>Connection</li></ul>
+              <p>Content that brings your brand into the conversation. Ideas with a clear direction.</p>
+              <a class="service-link" href="#contact">Let’s talk<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            </div>
+            <div class="service-art">
+              <div class="service-visual social-reference-composition" aria-hidden="true">
+            <img class="social-reference social-phantom" src="./assets/services/phantom-social.webp" width="700" height="633" alt="" loading="lazy" decoding="async">
+            <img class="social-reference social-arqa" src="./assets/services/arqa-social.webp" width="700" height="639" alt="" loading="lazy" decoding="async">
+            <img class="social-reference social-saeed" src="./assets/services/saeed-social.webp" width="700" height="639" alt="" loading="lazy" decoding="async">
+            <img class="social-reference social-khalifa" src="./assets/services/khalifa-social.webp" width="700" height="639" alt="" loading="lazy" decoding="async">
+          </div>
+            </div>
+          </div>
+        </article>
+        <div class="service-marker" aria-hidden="true"></div>
+        <article class="service-step" aria-labelledby="service-title-branding">
+          <div class="service-panel service-branding">
+            <div class="service-copy">
+              <h3 id="service-title-branding">Branding<br>&amp; Design</h3>
+              <ul class="service-tags" aria-label="Branding &amp; Design focus"><li>Identity</li><li>Expression</li></ul>
+              <p>A visual identity that feels like you. From the first impression to the finer details.</p>
+              <a class="service-link" href="#contact">Let’s talk<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            </div>
+            <div class="service-art">
+              <div class="service-visual identity-composition" aria-hidden="true">
+            <div class="identity-sheet"><span>VIDEORY / BRAND IDENTITY</span><img src="./assets/brand-logo.png" width="1329" height="1262" alt="" loading="lazy" decoding="async"><div class="identity-swatches"><i></i><i></i><i></i></div></div>
+            <div class="identity-card identity-card-blue"><img src="./assets/brand-icon.png" width="1600" height="1568" alt="" loading="lazy" decoding="async"><span>IDEAS INTO IMPACT.</span></div>
+            <div class="identity-card identity-card-white"><img src="./assets/brand-logo.png" width="1329" height="1262" alt="" loading="lazy" decoding="async"></div>
+          </div>
+            </div>
+          </div>
+        </article>
+        <div class="service-marker" aria-hidden="true"></div>
+        <article class="service-step" aria-labelledby="service-title-development">
+          <div class="service-panel service-development">
+            <div class="service-copy">
+              <h3 id="service-title-development">Web<br>Development</h3>
+              <ul class="service-tags" aria-label="Web Development focus"><li>Design</li><li>Technology</li></ul>
+              <p>Your brand, online. Design and development brought together in one digital experience.</p>
+              <a class="service-link" href="#contact">Let’s talk<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            </div>
+            <div class="service-art">
+              <div class="service-visual phantom-composition" aria-hidden="true">
+            <div class="phantom-browser"><div class="website-chrome"><i></i><i></i><i></i><span>phantomrentcar.com</span></div><img src="./assets/services/phantom-website.webp" width="1200" height="824" alt="" loading="lazy" decoding="async"></div>
+          </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy"><span class="section-index" aria-hidden="true">START SOMETHING</span><h2 id="contact-title"><span class="heading-word-mask"><span class="heading-word">Let’s</span></span> <em class="heading-word-mask"><span class="heading-word">create.</span></em></h2><div class="contact-location"><span class="status-dot"></span> ABU DHABI · UAE</div></div>
+      <div class="direct-contact">
+
+
+        <div class="contact-method" id="email-contact"><span class="eyebrow">EMAIL</span><span class="contact-placeholder">Email coming soon</span></div>
+        <div class="contact-method" id="phone-contact"><span class="eyebrow">PHONE</span><span class="contact-placeholder">Phone coming soon</span></div>
+        <div class="contact-brand"><img src="./assets/brand-logo.png" alt="Videory Production" width="150" height="142"></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="wordmark footer-logo" href="#home">videory<span class="logo-dot">.</span></a><small>© <span id="year">2026</span> Videory</small><a href="#home" class="back-top">BACK TO TOP</a></footer>
+</body>
+</html>

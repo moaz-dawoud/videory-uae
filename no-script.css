@@ -1,0 +1,3 @@
+.work-tabs { display: none; }
+.work-panel[hidden] { display: block !important; }
+.work-panel { margin-bottom: 40px; }
