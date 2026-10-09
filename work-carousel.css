@@ -31,3 +31,7 @@
 .work-carousel .work-item[aria-hidden="true"] { pointer-events: none; }
 /* Reordering original slides must not become a browser scroll anchor. */
 .work-carousel { overflow-anchor: none; }
+
+/* Keep a single portrait film at the established mobile viewing width. */
+.single-film-gallery { max-width: 420px; margin-inline: auto; }
+.single-film-gallery .inline-gallery { grid-template-columns: 1fr; }
