@@ -32,16 +32,6 @@
 .hero-copy { font-size: 16px; color: #e4edf2; margin: 0 0 26px; }
 .hero .button { background: #00cef1; color: #08232e; }
 .hero .button:hover, .hero .button:focus-visible { background: #c5f1ff; }
-.hero-bottom { margin-top: 0; min-height: 82px; padding: 16px 0; flex-wrap: nowrap; gap: 20px; }
-.hero-bottom > .reel-caption { font-size: 12px; letter-spacing: 1.6px; line-height: 1.5; color: #c7d8e3; }
-.hero-bottom-actions { display: flex; align-items: center; gap: 28px; flex-shrink: 0; }
-.hero-bottom .scroll-link { position: static; margin: 0; font-size: 12px; letter-spacing: 1.2px; }
-.reel-toggle { appearance: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; min-width: 114px; padding: 11px 15px; border: 1px solid #b2cad55c; border-radius: 50px; background: #09192366; color: #edf8fc; font: inherit; font-size: 13px; letter-spacing: .1px; cursor: pointer; transition: background .2s, border-color .2s; }
-.reel-toggle:hover { background: #163c51; border-color: #91d9ef; }
-.reel-toggle[hidden] { display: none; }
-.reel-toggle[data-playing="true"] .reel-play-icon, .reel-toggle[data-playing="false"] .reel-pause-icon { display: none; }
-.reel-progress { position: absolute; z-index: 3; bottom: 0; left: 0; width: 100%; height: 2px; background: #e6f9ff14; pointer-events: none; }
-.reel-progress span { display: block; width: 100%; height: 100%; background: #00cef1; transform: scaleX(var(--reel-progress, 0)); transform-origin: left; }
 @media (min-width: 1600px) {
   .hero { padding-right: max(4.5%, calc((100vw - 1510px)/2)); padding-left: max(4.5%, calc((100vw - 1510px)/2)); }
 }
@@ -56,21 +46,14 @@
   .hero h1 { font-size: clamp(36px, 8.6vw, 64px); line-height: 1.07; letter-spacing: -.045em; margin-bottom: 22px; }
   .hero-copy { font-size: 14px; max-width: 100%; margin: 0 0 24px; }
   .hero .button { min-height: 50px; padding: 15px 23px; }
-  .hero-bottom { min-height: 79px; padding: 16px 0; gap: 12px; }
-  .hero-bottom > .reel-caption { max-width: 180px; font-size: 11px; letter-spacing: 1px; }
-  .hero-bottom-actions { gap: 0; }
-  .hero-bottom .scroll-link { display: none; }
-  .reel-toggle { min-width: 106px; font-size: 12px; gap: 8px; padding: 11px 13px; }
 }
 @media (max-width: 380px) {
   .brand-signature { --mark-size: 29px; --mark-gap: 8px; }
   .hero h1 { font-size: 9vw; }
-  .hero-bottom > .reel-caption { max-width: 142px; font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .brand-word, .brand-mark, .hero-visual { transform: none !important; }
   .brand-word { opacity: 1 !important; }
-  .reel-progress { display: none; }
 }
 
 /* Keep all mobile destinations beside the logo, with comfortable tap heights. */
