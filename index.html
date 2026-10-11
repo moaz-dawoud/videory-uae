@@ -24,8 +24,10 @@
   <link rel="stylesheet" href="./hero.css">
   <link rel="stylesheet" href="./work-carousel.css">
   <link rel="stylesheet" href="./editorial.css">
+  <link rel="stylesheet" href="./contact.css">
   <link rel="preload" href="./assets/fonts/dm-sans.ttf" as="font" type="font/ttf" crossorigin>
   <script src="./app.js" defer></script>
+  <script src="./contact.js" defer></script>
   <script src="./work-carousel.js" defer></script>
   <script src="./hero.js" defer></script>
   <script src="./logo.js" defer></script>
@@ -38,6 +40,7 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Videory",
+  "email": "info@videory.net",
   "description": "Creative agency in Abu Dhabi, UAE offering media production, digital marketing, branding and design, and web development.",
   "areaServed": {
     "@type": "Country",
@@ -175,14 +178,34 @@
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-copy"><span class="section-index" aria-hidden="true">START SOMETHING</span><h2 id="contact-title"><span class="heading-word-mask"><span class="heading-word">Let’s</span></span> <em class="heading-word-mask"><span class="heading-word">create.</span></em></h2><div class="contact-location"><span class="status-dot"></span> ABU DHABI · UAE</div></div>
       <div class="direct-contact">
-
-
-        <div class="contact-method" id="email-contact"><span class="eyebrow">EMAIL</span><span class="contact-placeholder">Email coming soon</span></div>
-        <div class="contact-method" id="phone-contact"><span class="eyebrow">PHONE</span><span class="contact-placeholder">Phone coming soon</span></div>
-        <div class="contact-brand"><img src="./assets/brand-logo.png" alt="Videory Production" width="150" height="142"></div>
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/info@videory.net" method="POST" aria-labelledby="message-title">
+          <h3 id="message-title">Send us a message.</h3>
+          <input type="hidden" name="_subject" value="New message from Videory website">
+          <input type="hidden" name="_template" value="table">
+          <input class="contact-form-trap" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="contact-form-row">
+            <div class="contact-field">
+              <label for="message-name">Your name</label>
+              <input id="message-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+            </div>
+            <div class="contact-field">
+              <label for="message-email">Your email</label>
+              <input id="message-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="message-body">Your message</label>
+            <textarea id="message-body" name="message" rows="5" maxlength="5000" required></textarea>
+          </div>
+          <div class="contact-form-actions">
+            <button id="message-submit" class="contact-send" type="submit"><span>Send message</span><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+            <p class="contact-form-note">We’ll use your email to reply.</p>
+          </div>
+          <p id="message-status" class="contact-form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
-  <footer><a class="wordmark footer-logo" href="#home">videory<span class="logo-dot">.</span></a><small>© <span id="year">2026</span> Videory</small><a href="#home" class="back-top">BACK TO TOP</a></footer>
+  <footer><a class="wordmark footer-logo" href="#home">videory<span class="logo-dot">.</span></a><small>© <span id="year">2026</span> Videory</small><a href="#home" class="back-top">BACK TO TOP</a><div class="footer-email"><a href="mailto:info@videory.net">info@videory.net<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></div></footer>
 </body>
 </html>
