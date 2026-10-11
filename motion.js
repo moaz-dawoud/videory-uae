@@ -33,8 +33,7 @@
         .from('.hero-visual', { scale: 1.035, duration: 1.6, clearProps: 'transform' }, 0)
         .from('.hero-top', { y: -12, opacity: 0, duration: .65, clearProps: 'transform,opacity' }, .05)
         .from('.title-line', { yPercent: 115, rotation: 2, duration: 1.15, stagger: .12, clearProps: 'transform' }, .12)
-        .from('.hero-copy, .hero .button', { y: 22, opacity: 0, duration: .75, stagger: .1, clearProps: 'transform,opacity' }, .57)
-        .from('.hero-bottom', { y: 12, opacity: 0, duration: .7, clearProps: 'transform,opacity' }, .78);
+        .from('.hero-copy, .hero .button', { y: 22, opacity: 0, duration: .75, stagger: .1, clearProps: 'transform,opacity' }, .57);
     }
 
     const reveal = (element, distance = 36) => {
