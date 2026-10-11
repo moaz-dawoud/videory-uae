@@ -21,8 +21,10 @@ Reference: https://developers.google.com/search/docs/crawling-indexing/javascrip
 
 ## Contact form
 
-The form posts directly to https://formsubmit.co/info@videory.net. It requires no site backend or secret key. The visitor email is used as Reply-To, CAPTCHA stays enabled, and the _honey field helps filter bots. No automatic email replies are configured.
+The contact form keeps its original layout and sends JSON to https://formsubmit.co/ajax/info@videory.net when JavaScript is available. Visitors stay on the website. The English thank-you message appears only after an HTTP success and an explicit successful service response; requests for email activation are not shown as successful delivery. This acknowledgement does not prove inbox delivery.
 
-FormSubmit requires a one-time confirmation: the first real submission triggers an activation email to info@videory.net. Confirm that email, then send another test and check delivery before calling the form live. Check spam if needed. Do not treat an activation request as delivered visitor mail.
+Pending submissions disable the button and temporarily lock the fields. Failed or timed-out requests preserve the message and show a retry/direct-email notice. No automatic retry or automatic email replies are configured. The honeypot is retained and CAPTCHA is not explicitly disabled. Without JavaScript, the native POST fallback still opens FormSubmit verification.
 
-Email delivery has not yet been verified. Preview future changes locally and publish only after the site owner explicitly approves. FormSubmit receives the submitted visitor data; service documentation: https://formsubmit.co/documentation.
+The owner has explicitly approved continuing with FormSubmit. It remains an external service that receives visitor data. If the email has not been activated, confirm the activation email before testing delivery. No real message has been submitted during draft verification.
+
+Preview future changes locally and publish only after the owner approves. Documentation: https://formsubmit.co/ajax-documentation.

@@ -178,7 +178,7 @@
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-copy"><span class="section-index" aria-hidden="true">START SOMETHING</span><h2 id="contact-title"><span class="heading-word-mask"><span class="heading-word">Let’s</span></span> <em class="heading-word-mask"><span class="heading-word">create.</span></em></h2><div class="contact-location"><span class="status-dot"></span> ABU DHABI · UAE</div></div>
       <div class="direct-contact">
-        <form id="contact-form" class="contact-form" action="https://formsubmit.co/info@videory.net" method="POST" aria-labelledby="message-title">
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/info@videory.net" data-submit-url="https://formsubmit.co/ajax/info@videory.net" method="POST" aria-labelledby="message-title">
           <h3 id="message-title">Send us a message.</h3>
           <input type="hidden" name="_subject" value="New message from Videory website">
           <input type="hidden" name="_template" value="table">
@@ -201,7 +201,7 @@
             <button id="message-submit" class="contact-send" type="submit"><span>Send message</span><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
             <p class="contact-form-note">We’ll use your email to reply.</p>
           </div>
-          <p id="message-status" class="contact-form-status" role="status" aria-live="polite"></p>
+          <p id="message-status" class="contact-form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
         </form>
       </div>
     </section>

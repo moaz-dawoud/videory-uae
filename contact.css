@@ -26,3 +26,7 @@ footer { flex-wrap: wrap; }
 .footer-email svg { flex-shrink: 0; }
 @media (max-width: 760px) { .contact-form h3 { margin-bottom: 24px; }.contact-form-row { grid-template-columns: 1fr; gap: 0; }.contact-field { margin-bottom: 20px; }.footer-email { margin-top: 18px; padding-top: 20px; } }
 @media (prefers-reduced-motion: reduce) { .contact-field input, .contact-field textarea, .contact-send, .footer-email a { transition: none; } }
+
+.contact-form-status[data-state="success"], .contact-form-status[data-state="error"] { padding: 16px 18px; border: 1px solid #536a79; border-radius: 8px; background: #14242e; font-size: 15px; }
+.contact-form-status[data-state="success"] { color: #bceeff; }
+.contact-form-status[data-state="error"] { color: #ffb7ad; }
